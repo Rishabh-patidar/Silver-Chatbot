@@ -39,9 +39,8 @@ function App() {
           className="chatbot-heading"
           style={{
             fontSize: '32px',
-            color:'blue',
+            color: rgb(0 8 145);
             
-
           }}
         >
           SILVER CHAT BOT

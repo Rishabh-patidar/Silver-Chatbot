@@ -1,12 +1,38 @@
+// import logo from './logo.svg';
+// import './App.css';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         {/* <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a> */}
+//         SILVER CHAT BOT
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useState } from 'react';
-import ChatMessage from './components/ChatMessage';
 import './App.css';
-import ChatbotLogo from './image/1570440734590.jpg';
 
 function App() {
   const [chatMessages, setChatMessages] = useState([]);
   const [userMessage, setUserMessage] = useState('');
 
+  // Function to handle sending user message
   const handleSendMessage = () => {
     setChatMessages([...chatMessages, { message: userMessage, sender: 'user' }]);
     // Call backend API or process the user message here and get the chatbot's response
@@ -16,40 +42,12 @@ function App() {
   };
 
   return (
-    <div className="chatbot-container">
-      <div
-        className="header"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          marginBottom: '20px',
-        }}
-      >
-        <img
-          src={ChatbotLogo}
-          alt="Chatbot Logo"
-          style={{
-            width: '100px',
-            height: '100px',
-            objectFit: 'contain',
-            marginRight: '10px',
-          }}
-        />
-        <h1
-          className="chatbot-heading"
-          style={{
-            fontSize: '32px',
-            color:'blue',
-            
-
-          }}
-        >
-          SILVER CHAT BOT
-        </h1>
-      </div>
+    <div className="chat-container">
       <div className="chat-display">
         {chatMessages.map((msg, index) => (
-          <ChatMessage key={index} message={msg.message} sender={msg.sender} />
+          <div key={index} className={msg.sender === 'user' ? 'user-message' : 'chatbot-message'}>
+            {msg.message}
+          </div>
         ))}
       </div>
       <div className="user-input">
@@ -66,3 +64,4 @@ function App() {
 }
 
 export default App;
+

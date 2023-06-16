@@ -20,7 +20,7 @@ function App() {
       <div
         className="header"
         style={{
-          display: 'flex',
+          display: '-moz-initial',
           alignItems: 'center',
           marginBottom: '20px',
         }}
@@ -40,8 +40,6 @@ function App() {
           style={{
             fontSize: '32px',
             color:'blue',
-            
-
           }}
         >
           SILVER CHAT BOT

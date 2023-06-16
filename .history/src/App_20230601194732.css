@@ -87,8 +87,6 @@
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
-  margin-left: 100px;
-
  
 }
 
@@ -117,11 +115,4 @@
   align-items: center;
   flex-direction: horizontal; /* Add this line to align items vertically */
   margin-bottom: 20px;
-}
-
-.chatbot-logo {
-  width: 40px;
-  height: 40px;
-  object-fit:fill;
-  margin-bottom: 10px;
 }

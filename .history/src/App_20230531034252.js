@@ -17,36 +17,8 @@ function App() {
 
   return (
     <div className="chatbot-container">
-      <div
-        className="header"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          marginBottom: '20px',
-        }}
-      >
-        <img
-          src={ChatbotLogo}
-          alt="Chatbot Logo"
-          style={{
-            width: '100px',
-            height: '100px',
-            objectFit: 'contain',
-            marginRight: '10px',
-          }}
-        />
-        <h1
-          className="chatbot-heading"
-          style={{
-            fontSize: '32px',
-            color:'blue',
-            
-
-          }}
-        >
-          SILVER CHAT BOT
-        </h1>
-      </div>
+      <h1 className="chatbot-heading">SILVER CHAT BOT</h1>
+      <img src={ChatbotLogo} alt="Chatbot Logo" className="chatbot-logo" />
       <div className="chat-display">
         {chatMessages.map((msg, index) => (
           <ChatMessage key={index} message={msg.message} sender={msg.sender} />

@@ -38,10 +38,8 @@ function App() {
         <h1
           className="chatbot-heading"
           style={{
-            fontSize: '32px',
-            color:'blue',
-            
-
+            font-size: 32px;
+    color: rgb(0 8 145);
           }}
         >
           SILVER CHAT BOT

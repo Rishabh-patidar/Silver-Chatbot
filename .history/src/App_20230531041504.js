@@ -29,8 +29,8 @@ function App() {
           src={ChatbotLogo}
           alt="Chatbot Logo"
           style={{
-            width: '100px',
-            height: '100px',
+            width: '40px',
+            height: '40px',
             objectFit: 'contain',
             marginRight: '10px',
           }}
@@ -38,10 +38,8 @@ function App() {
         <h1
           className="chatbot-heading"
           style={{
-            fontSize: '32px',
-            color:'blue',
-            
-
+            fontSize: '24px',
+            color: '#333',
           }}
         >
           SILVER CHAT BOT

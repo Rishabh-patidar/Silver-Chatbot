@@ -40,8 +40,6 @@ function App() {
           style={{
             fontSize: '32px',
             color:'blue',
-            
-
           }}
         >
           SILVER CHAT BOT
