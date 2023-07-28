@@ -39,18 +39,15 @@ function App() {
           className="chatbot-heading"
           style={{
             fontSize: '32px',
-            color: rgb(0 8 145);
+            color:'blue',
             
+
           }}
         >
           SILVER CHAT BOT
         </h1>
       </div>
-      <div className="chat-display">
-        {chatMessages.map((msg, index) => (
-          <ChatMessage key={index} message={msg.message} sender={msg.sender} />
-        ))}
-      </div>
+      
       <div className="user-input">
         <input
           type="text"
